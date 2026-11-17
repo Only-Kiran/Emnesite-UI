@@ -1,10 +1,10 @@
 /* Variabler */
 html {
-  --color-page: #f7f7f7;
-  --color-surface: #fff;
+  --color-page: #e1bc9f;
+  --color-surface: #ab9aab;
   --color-text: #222;
   --color-muted: #666;
-  --color-border: #d8d8d8;
+  --color-border: #fff;
   --space-05: 0.5rem;
   --space-1: 1rem;
   --space-2: 2rem;
@@ -250,4 +250,131 @@ main > * {
   background: var(--color-surface);
   color: inherit;
   text-decoration: none;
+}
+
+/* Forside */
+h1,
+h2,
+h3 {
+  font-family: "Lily Script One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #8d6c43;
+}
+h1 {
+  font-size: 55px;
+}
+h2 {
+  font-size: 42px;
+}
+h3,
+h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#dit-valg-1 h3 {
+  color: #010101;
+}
+#hv-logo {
+  display: flex;
+}
+#hv1-logo {
+  width: 79px;
+}
+.logo-wrap {
+  display: flex;
+  align-items: center;
+}
+.logo-wrap img {
+  width: 120px;
+  height: auto;
+}
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn {
+  background-color: #f96e33;
+  color: #010101;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+.btn {
+  background-color: #f96e33;
+  color: #010101;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  cursor: pointer;
+}
+#aktiviteter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: -4rem;
+}
+.kort {
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.kort img {
+  width: 100%;
+}
+.meditation {
+  background-color: #8bb449;
+}
+
+.fitness {
+  background-color: #7cbbe7;
+}
+
+.sundhed {
+  background-color: #ab9aab;
+}
+
+.wellness {
+  background-color: #8d6c43;
+}
+.dit-valg {
+  background-color: #8bb449;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+@keyframes clip-reveal {
+  from {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.reveal {
+  animation: clip-reveal ease-out both;
+  animation-timeline: view();
+  animation-range: 20% 50%;
 }
