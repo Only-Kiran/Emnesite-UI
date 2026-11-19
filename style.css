@@ -378,3 +378,19 @@ p {
   animation-timeline: view();
   animation-range: 20% 50%;
 }
+/* SVG */
+summary {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #8d6c43;
+}
+.svg-placeholder {
+  position: relative;
+}
+
+.svg-placeholder img {
+  width: 100%;
+  display: block;
+}
