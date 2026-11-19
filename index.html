@@ -4,32 +4,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eventnavn</title>
+  <title>Helbred & Wellness</title>
+  <link rel="icon" type="image/png" href="favicon(1)/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon(1)/favicon.svg" />
+  <link rel="shortcut icon" href="favicon(1)/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon(1)/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <link rel="stylesheet" href="./starter.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="site-header">
     <div class="header-content">
-      <a class="site-logo" href="./">Eventnavn</a>
+      <div class="logo-wrap">
+
+        <a class="site-logo" href="index.html">
+          <img src="./billeder/Logo-til-UI-projekt-3.svg" alt="Logo">
+        </a>
+        <a class="site-logo" href="./">Helbred & Wellness</a>
+      </div>
       <nav class="site-nav">
-        <button>Menu</button>
+        <button popovertarget="menu">
+          Menu
+        </button>
         <ul class="menu" id="menu" popover>
           <li><a href="./" aria-current="page">Forside</a></li>
-          <li><a href="./svg.html">Interaktiv SVG</a></li>
+          <li><a href="./svg.html">Se programmet</a></li>
           <li><a href="./form.html">Formular</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main></main>
+  <main>
+    <section id="hero">
+      <div id="hv-logo">
+        <img id="hv1-logo" src="billeder/Logo-til-UI-projekt-3.svg" alt="">
+        <h1>Helbred & Wellness</h1>
+      </div>
+      <img src="./billeder/Lav-en-elegant-og-professionel.webp" alt="Lav en elegant og professionel">
+      <h2>Find din balance – mellem krop og sind</h2>
+    </section>
 
+    <section id="intro">
+      <h3>Velkommen til Helbred & Wellness</h3>
+      <p>Et inspirerende event med fokus på sundhed, balance og velvære. Oplev spændende meditation, fitness og
+        wellnessaktiviteter, mød inspirerende udstillere, og find inspiration til en sundere livsstil for både krop og
+        sind.</p>
+      <a href="svg.html" class="btn">Se programmet</a>
+    </section>
+    <section class="intro-aktiviteter">
+      <h3>Et event med fokus på dig</h3>
+      <p>Uanset om du søger ro, bevægelse, ny viden eller selvforkælelse, finder du inspiration til både krop og sind.
+      </p>
+    </section>
+    <section id="aktiviteter">
+      <section id="meditation">
+        <article class="kort meditation">
+          <img class="reveal" src="./billeder/En-kvinde-som-sidder-og-meditere.webp"
+            alt="En kvinde som sidder og meditere" />
+          <h4>Meditation</h4>
+          <p>Find indre ro og balance gennem meditation og mindfulness. Giv dig selv tid til fordybelse og mental
+            afslapning.</p>
+          <details>
+            <summary class="btn">Læs mere</summary>
+            <div class="popups-tekst">
+              <p>Oplev forskellige meditationsprogrammer og mindfulnessaktiviteter, der hjælper dig med at finde ro i en
+                travl hverdag. Få inspiration til at skabe balance mellem krop og sind.</p>
+            </div>
+          </details>
+        </article>
+      </section>
+      <section id="fitness">
+        <article class="kort fitness">
+          <img class="reveal" src="./billeder/En-kvinde-laver-squat-øvelse.webp" alt="En kvinde laver squat øvelse" />
+          <h4>Fitness</h4>
+          <p>Få ny energi og inspiration til en aktiv livsstil gennem spændende træningsaktiviteter.</p>
+          <details>
+            <summary class="btn">Læs mere</summary>
+            <div class="popups-tekst">
+              <p>Udforsk forskellige fitnessprogrammer og træningsmuligheder. Uanset om du er nybegynder eller erfaren,
+                kan du finde inspiration til bevægelse, styrke og en sundere hverdag.</p>
+            </div>
+          </details>
+        </article>
+      </section>
+      <section id="sundhed">
+        <article class="kort sundhed">
+          <img class="reveal" src="./billeder/Hjerteform-skål.webp" alt="Hjerteform skål">
+          <h4>Sundhed</h4>
+          <p>Bliv klogere på din krop og dit helbred. Få ny viden og inspiration til en sundere livsstil.</p>
+          <details>
+            <summary class="btn">Læs mere</summary>
+            <div class="popups-tekst">
+              <p>Få mere viden om fysisk og mental sundhed gennem inspirerende oplæg og aktiviteter. Lær mere om,
+                hvordan små ændringer i hverdagen kan bidrage til et bedre helbred.</p>
+            </div>
+          </details>
+        </article>
+      </section>
+      <section id="wellness">
+        <article class="kort wellness">
+          <img class="reveal" src="./billeder/Wellness.webp" alt="Wellness">
+          <h4>Wellness</h4>
+          <p>Forkæl dig selv med velvære, afslapning og selvomsorg.</p>
+          <details>
+            <summary class="btn">Læs mere</summary>
+            <div class="popups-tekst">
+              <p>Oplev forskellige wellnessmuligheder, spa-inspiration og produkter fra små og mellemstore virksomheder.
+                Find inspiration til mere afslapning og selvforkælelse i hverdagen.</p>
+            </div>
+          </details>
+        </article>
+      </section>
+    </section>
+    <section class="dit-valg">
+      <div id="dit-valg-1">
+        <h3>Din sundhed. Din balance. Dit valg.</h3>
+      </div>
+      <p>Find inspiration til en sundere hverdag.</p>
+      <a href="form.html" class="btn"> Tilmeld dig </a>
+      <p>Eller udfyld formularen og fortæl os om dine interesser.</p>
+      <a href="form.html" class="btn">Udfyld formularen</a>
+    </section>
+  </main>
   <footer class="site-footer">
     <div class="footer-content">
-      <p>Eventnavn</p>
-      <p>Footer</p>
+      <p>Helbred & Wellness</p>
+      <p>November 2026</p>
     </div>
   </footer>
   <script src="./script.js"></script>

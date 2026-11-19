@@ -4,21 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formular | Eventnavn</title>
+  <title>Formular | Helbred & Wellness</title>
+  <link rel="icon" type="image/png" href="favicon(1)/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="favicon(1)/favicon.svg">
+  <link rel="shortcut icon" href="favicon(1)/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon(1)/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="./starter.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="site-header">
     <div class="header-content">
-      <a class="site-logo" href="./">Eventnavn</a>
+      <div class="logo-wrap">
+
+        <a class="site-logo" href="index.html">
+          <img src="./billeder/Logo-til-UI-projekt-3.svg" alt="Logo">
+        </a>
+        <a class="site-logo" href="./">Helbred & Wellness</a>
+      </div>
       <nav class="site-nav">
-        <button>Menu</button>
+        <button popovertarget="menu">
+          Menu
+        </button>
         <ul class="menu" id="menu" popover>
-          <li><a href="./">Forside</a></li>
-          <li><a href="./svg.html">Interaktiv SVG</a></li>
-          <li><a href="./form.html" aria-current="page">Formular</a></li>
+          <li><a href="./" aria-current="page">Forside</a></li>
+          <li><a href="./svg.html">Se programmet</a></li>
+          <li><a href="./form.html">Formular</a></li>
         </ul>
       </nav>
     </div>
@@ -27,18 +46,102 @@
   <main>
     <section class="form-page">
       <header class="form-intro">
-        <h1>Formular</h1>
-        <p>Lav en formular, der sender brugeren videre til opsamlingssiden.</p>
+        <h1>Tilmeld dig Helbred & Wellness</h1>
+        <p> Find inspiration til en sundere hverdag.
+          Få ny viden om sundhed, meditation og fitness, oplev spændende aktiviteter
+          og mød virksomheder inden for wellness. Udfyld formularen nedenfor for at
+          tilmelde dig eventet.</p>
       </header>
 
-      <form class="form-placeholder" action="./opsamling.html"></form>
+      <form class="form-placeholder" action="./opsamling.html">
+        <h2>Personlige oplysninger</h2>
+
+        <label for="fullname">Fulde navn</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Indtast dit fulde navn">
+
+        <label for="email">E-mailadresse</label>
+        <input type="email" id="email" name="email" placeholder="Indtast din e-mailadresse">
+
+        <label for="phone">Telefonnummer (valgfrit)</label>
+        <input type="tel" id="phone" name="phone" placeholder="Indtast dit telefonnummer">
+
+        <h3>Hvilke områder interesserer dig mest?</h3>
+
+        <p>Vælg dine interesser:</p>
+
+        <label>
+          <input type="checkbox" name="interesse" value="meditation">
+          Meditation og mindfulness
+        </label>
+
+        <label>
+          <input type="checkbox" name="interesse" value="fitness">
+          Fitness og træning
+        </label>
+
+        <label>
+          <input type="checkbox" name="interesse" value="sundhed">
+          Sundhed og kost
+        </label>
+
+        <label>
+          <input type="checkbox" name="interesse" value="wellness">
+          Spa og wellness
+        </label>
+
+        <label>
+          <input type="checkbox" name="interesse" value="hudpleje">
+          Hudpleje og selvforkælelse
+        </label>
+
+        <h3>Hvilken type oplevelse foretrækker du?</h3>
+
+        <label>
+          <input type="radio" name="oplevelse" value="afslappende">
+          Afslappende oplevelser
+        </label>
+
+        <label>
+          <input type="radio" name="oplevelse" value="aktive">
+          Aktive oplevelser
+        </label>
+
+        <label>
+          <input type="radio" name="oplevelse" value="workshops">
+          Lærerige workshops
+        </label>
+
+        <h3>Hvordan hørte du om eventet?</h3>
+
+        <label>
+          <input type="radio" name="kilde" value="sociale-medier">
+          Sociale medier
+        </label>
+
+        <label>
+          <input type="radio" name="kilde" value="venner-familie">
+          Venner og familie
+        </label>
+
+        <label>
+          <input type="radio" name="kilde" value="google">
+          Google
+        </label>
+
+        <label>
+          <input type="radio" name="kilde" value="Andet">
+          Andet
+        </label>
+        <input type="text" id="andetTekst" placeholder="Skriv venligst hvor du hørte om eventet" style="display: none;">
+        <button type="submit" class="btn">Tilmeld mig</button>
+      </form>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-content">
-      <p>Eventnavn</p>
-      <p>Footer</p>
+      <p>Helbred & Wellness</p>
+      <p>November 2026</p>
     </div>
   </footer>
   <script src="./script.js"></script>
